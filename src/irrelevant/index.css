@@ -1,0 +1,78 @@
+:root {
+  --color-background: rgb(24 24 27);
+  --color-grid: rgba(39, 39, 42, 0.25);
+  --color-link: rgb(212 212 216);
+  --color-link-text-decoration: rgb(161 161 170);
+  --color-text: rgb(255 255 255);
+  --color-transparent: rgba(0 0 0 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:where(html, blockquote, body, p, ul, li) {
+  margin: 0;
+  padding: 0;
+}
+
+:where(html, body, #root) {
+  height: 100%;
+}
+
+:where(body) {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  background-image: linear-gradient(
+      to right,
+      var(--color-grid) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+  background-size: 2rem 2rem;
+  background-position: 0 0;
+  background-origin: border-box;
+  font-size: 100%;
+  line-height: 1.2;
+  tab-size: 4;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+.layout {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+  place-content: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.325rem;
+  font-size: 0.75rem;
+}
+
+.footer__img {
+  filter: grayscale(100%) brightness(75%) contrast(175%);
+}
+
+.footer__link {
+  color: var(--color-link);
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-link-text-decoration);
+}
