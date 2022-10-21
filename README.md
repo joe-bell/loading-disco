@@ -11,6 +11,15 @@
 </p>
 
 <p align="center">
+  <a href="https://stackblitz.com/github/joe-bell/loading-disco?title=Joe%20Bell%20–%20Loading%20Disco">
+    <img
+      alt="Open in StackBlitz"
+      src="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg"
+    />
+  </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/joe-bell/loading-disco/blob/main/LICENSE">
     <img alt="Apache 2.0 License" src="https://badgen.net/github/license/joe-bell/loading-disco" />
   </a>
