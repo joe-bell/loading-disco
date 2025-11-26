@@ -18,8 +18,8 @@
   --button-bg-gradient-start: rgb(24 24 27);
   --button-bg-gradient-end: rgb(39 39 42);
   --button-disco-animation: disco 1.5s linear infinite;
-  --button-disco-gradient-stops: transparent 135deg,
-    var(--button-color-disco) 180deg, transparent 225deg;
+  --button-disco-gradient-stops:
+    transparent 135deg, var(--button-color-disco) 180deg, transparent 225deg;
   --button-disco-opacity: 1;
   --button-radius: 0.5rem;
   --button-transition-duration: 200ms;

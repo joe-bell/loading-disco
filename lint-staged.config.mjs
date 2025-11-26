@@ -1,8 +1,9 @@
-export default {
-  "*": (filenames) => [
-    `npm run format -- --write ${filenames
+const config = {
+  "**/*": (filenames) => [
+    `pnpm prettier --write ${filenames
       .map((filename) => `'${filename}'`)
       .join(" ")}`,
   ],
-  "*.{ts,tsx}": () => ["npm run lint"],
 };
+
+export default config;

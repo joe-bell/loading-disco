@@ -1,8 +1,9 @@
 import * as React from "react";
-import { cva } from "class-variance-authority";
+import { cva } from "cva";
 import "./Button.css";
 
-const button = cva("button", {
+const button = cva({
+  base: "button",
   variants: { isBusy: { true: "is-busy" } },
   defaultVariants: {
     isBusy: false,

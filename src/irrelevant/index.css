@@ -28,11 +28,8 @@
 :where(body) {
   color: var(--color-text);
   background-color: var(--color-background);
-  background-image: linear-gradient(
-      to right,
-      var(--color-grid) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
     linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
   background-size: 2rem 2rem;
   background-position: 0 0;
@@ -40,8 +37,19 @@
   font-size: 100%;
   line-height: 1.2;
   tab-size: 4;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

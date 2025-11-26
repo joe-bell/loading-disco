@@ -1,4 +1,4 @@
-name: CI
+name: ci
 
 on:
   push:
@@ -7,18 +7,27 @@ on:
     branches: [main]
 
 jobs:
-  npm:
+  prettier:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        script: [format:check, lint]
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
-          cache: "npm"
-      - run: npm ci
-      - name: ${{ matrix.script }}
-        run: npm run ${{ matrix.script }}
+          fetch-depth: 0
+      - uses: ./.github/actions/install
+      - run: pnpm prettier --check .
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/install
+      - run: pnpm build
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/install
+      - run: pnpm check

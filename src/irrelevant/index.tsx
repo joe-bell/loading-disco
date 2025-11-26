@@ -9,7 +9,7 @@ export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
         <span className="footer__img">ℹ️</span>
         <a
           className="footer__link"
-          href="https://joebell.co.uk/sketches/loading-disco"
+          href="https://joebell.studio/craft/loading-disco"
           target="_blank"
           rel="noopener"
         >
