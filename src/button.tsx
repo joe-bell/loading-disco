@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cva } from "cva";
-import "./Button.css";
+import "./button.css";
 
 const button = cva({
   base: "button",
