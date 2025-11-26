@@ -76,7 +76,22 @@
 }
 
 .footer__img {
-  filter: grayscale(100%) brightness(75%) contrast(175%);
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em;
+  height: 1.2em;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--color-link-text-decoration);
+  color: var(--color-link-text-decoration);
+}
+
+.footer__img abbr {
+  font-size: 0.75em;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .footer__link {

@@ -1,12 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { Layout } from "./irrelevant";
-import { Button } from "./Button";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { App } from "./app.tsx";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <Layout>
-      <Button />
-    </Layout>
-  </React.StrictMode>,
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
 );

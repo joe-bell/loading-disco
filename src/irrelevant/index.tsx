@@ -1,12 +1,14 @@
 import React from "react";
 import "./index.css";
 
-export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
+export const Layout = ({ children }: React.PropsWithChildren) => (
   <React.Fragment>
     <div className="layout">
       <main>{children}</main>
       <footer className="footer">
-        <span className="footer__img">ℹ️</span>
+        <span className="footer__img">
+          <abbr title="Information">i</abbr>
+        </span>
         <a
           className="footer__link"
           href="https://joebell.studio/craft/loading-disco"
