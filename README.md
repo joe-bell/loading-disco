@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <strong><a href="https://joebell.co.uk/blog/loading-images-with-the-blur-down-technique">See the full demo</a></strong><br/>
+  <strong><a href="https://joebell.studio/craft/loading-disco">See the full demo</a></strong><br/>
 </p>
 
 <p align="center">
