@@ -23,11 +23,11 @@
   <a href="https://github.com/joe-bell/loading-disco/blob/main/LICENSE">
     <img alt="Apache 2.0 License" src="https://badgen.net/github/license/joe-bell/loading-disco" />
   </a>
-  <a href="https://twitter.com/joebell_">
-    <img alt="Follow @joebell_ on Twitter" src="https://img.shields.io/twitter/follow/joebell_.svg?style=social&label=Follow" />
+  <a href="https://x.com/joebell_">
+    <img alt="Follow @joebell_ on X" src="https://img.shields.io/twitter/follow/joebell_.svg?style=social&label=Follow" />
   </a>
 </p>
 
 ## License
 
-Apache-2.0 License © [Joe Bell](https://twitter.com/joebell_)
+Apache-2.0 License © [Joe Bell](https://x.com/joebell_)
