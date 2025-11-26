@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "check": "tsc",
     "prepare": "pnpm run '/^prepare:.*/'",
-    "prepare:hooks": "git config core.hooksPath .github/hooks",
+    "prepare:hooks": "command -v git >/dev/null 2>&1 && git rev-parse --git-dir >/dev/null 2>&1 && git config core.hooksPath .github/hooks || true",
     "prettier": "prettier --ignore-unknown --no-error-on-unmatched-pattern"
   },
   "dependencies": {
