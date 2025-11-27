@@ -1,1 +1,3 @@
 20.19.1
+# Limited to 20.19.1 until StackBlitz supports later versions of Node
+# https://github.com/stackblitz/webcontainer-core/issues/560
